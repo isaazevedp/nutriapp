@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom right, #16752e, #9ccca8); /* Cores azul */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #444;
+}
+
+.container {
+    width: 320px;
+    height: 600px;
+    background: #fff; /* Cor de fundo branca */
+    border-radius: 20px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+
+
+.logo-circle:hover {
+    transform: rotate(360deg);
+}
+
+.logo-image {
+    width: 50%;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(145deg, #48955b, #387647); /* Botão com cores azuis */
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(145deg, #387647, #48955b); /* Cores inversas no hover */
+    transform: scale(1.05);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-image {
+    width: 60px;
+    margin-bottom: 10px;
+    animation: bounce 2s infinite;
+}
+
+.footer-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #387647; /* Azul para o texto do footer */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-8px);
+    }
+}
+

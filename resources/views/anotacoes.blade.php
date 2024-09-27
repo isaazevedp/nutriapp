@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle de Desperdício de Comida - Nutricionista</title>
-    <link rel="stylesheet" href="/css/anotações.css">
-    @vite(['resources/css/anotacoes.css', 'resources/js/app.js'])
+    <link rel="stylesheet" href="/css/anotacoes.css">
+    @vite(['resources/css/anotacoes.css'])
 </head>
 <body>
     <header>
@@ -14,18 +14,12 @@
     </header>
 
     <main>
-        <form id="nota-form">
+    <form action="{{ route('desperdiciostore') }}" method="post">
+            @csrf
             <fieldset>
                 <legend>Adicionar Anotações</legend>
                 <label for="data">Data:</label>
                 <input type="date" id="data" name="data" required>
-
-                <label for="turno">Turno:</label>
-                    <select id="turno" name="turno" required>
-                    <option value="" disabled selected>Informe o turno</option>
-                    <option value="manha">Manhã</option>
-                    <option value="tarde">Tarde</option>
-                </select>
 
                 <label for="escola">Turma:</label>
                 <input type="text" id="escola" name="escola" placeholder="Informe a Sala" required>
@@ -34,9 +28,10 @@
                 <input type="number" id="quantidade" name="quantidade" step="0.1" placeholder="Quantidade (kg)" required>
 
                 <label for="descricao">Descrição:</label>
-                <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva o desperdício observado..." required></textarea>
+                <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva o desperdício observado..." ></textarea>
 
-                <button type="submit">Salvar Anotação</button>
+                <input type="submit" text="Salvar">
+                <a href="{{ route('desperdiciostore') }}">Salvar Anotação</a>
                 <a href="{{ route('nutriapp') }}" class="btn-voltar">Voltar</a>
             </fieldset>
         </form>

@@ -47,7 +47,7 @@
                 <label for="data">Data:</label>
                 <input type="date" id="data" name="data" required>
                 
-                <a href="/calendario.html" class="btn-back">Registrar</a>
+                <a href="{{ route('painel') }}" class="btn-back">Registrar</a>
             </form>
 
             <a href="{{ route('nutriapp') }}" class="btn-back">Voltar</a> <!-- Botão de Voltar -->

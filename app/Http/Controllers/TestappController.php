@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class TestappController extends Controller
 {
-    public function nutriapp(){
+    public function inicio(){
         return view('html');
     }
 }

@@ -10,14 +10,13 @@
 <body>
     <header>
         <h1>Controle de Desperdício de Comida</h1>
-        <h2>Área de Anotações - Nutricionista</h2>
     </header>
 
     <main>
     <form action="{{ route('desperdiciostore') }}" method="post">
             @csrf
             <fieldset>
-                <legend>Adicionar Anotações</legend>
+                <legend>Área de Anotações - Nutricionista</legend>
                 <label for="data">Data:</label>
                 <input type="date" id="data" name="data" required>
 
@@ -32,7 +31,7 @@
 
                 <input type="submit" text="Salvar">
                 <a href="{{ route('desperdiciostore') }}">Salvar Anotação</a>
-                <a href="{{ route('nutriapp') }}" class="btn-voltar">Voltar</a>
+                <a href="{{ route('inicio') }}" class="btn-voltar">Voltar</a>
             </fieldset>
         </form>
     </main>

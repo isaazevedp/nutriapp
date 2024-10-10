@@ -28,7 +28,6 @@
     <div class="container">
         <header>
             <div class="top-bar">
-                <div class="signal">7:29 | 30/08/2024</div>
             </div>
             <div class="header-content">
                 <div class="menu-icon"></div>
@@ -38,73 +37,22 @@
         </header>
         <main>
             <div class="main-content">
-                <section class="turmas">
-                    <h2>Turmas</h2>
-                    <div class="turma-info">
-                        <!-- Menu Drop-Down com opções de salas -->
-                        <select name="turmas" id="turmas">
-                            <option value="8ano">8º Ano do Fundamental</option>
-                            <option value="9ano">9º Ano do Fundamental</option>
-                            <option value="1em">1º Ano do Ensino Médio</option>
-                            <option value="2em">2º Ano do Ensino Médio</option>
-                            <option value="3em">3º Ano do Ensino Médio</option>
-                        </select>
-                        <span>Escola Sesi - 162</span>
-                    </div>
+                     </div>
                 </section>
                 <section class="calendario">
                     <h2>Calendário</h2>
-                    <div class="calendar-view">
-                        <div class="calendar-header">
-                            <span>Agosto 2024</span>
-                        </div>
-                        <div class="calendar-grid">
-                            <!-- Cabeçalho do calendário com os dias da semana -->
-                            <div class="day-header">Dom</div>
-                            <div class="day-header">Seg</div>
-                            <div class="day-header">Ter</div>
-                            <div class="day-header">Qua</div>
-                            <div class="day-header">Qui</div>
-                            <div class="day-header">Sex</div>
-                            <div class="day-header">Sáb</div>
-
-                            <!-- Dias do calendário -->
-                            <div class="day"></div>
-                            <div class="day"></div>
-                            <div class="day"></div>
-                            <div class="day"></div>
-                            <div class="day">1</div>
-                            <div class="day">2</div>
-                            <div class="day">3</div>
-                            <div class="day">4</div>
-                            <div class="day">5</div>
-                            <div class="day">6</div>
-                            <div class="day">7</div>
-                            <div class="day">8</div>
-                            <div class="day">9</div>
-                            <div class="day">10</div>
-                            <div class="day">11</div>
-                            <div class="day">12</div>
-                            <div class="day">13</div>
-                            <div class="day">14</div>
-                            <div class="day">15</div>
-                            <div class="day">16</div>
-                            <div class="day">17</div>
-                            <div class="day">18</div>
-                            <div class="day">19</div>
-                            <div class="day">20</div>
-                            <div class="day">21</div>
-                            <div class="day">22</div>
-                            <div class="day">23</div>
-                            <div class="day">24</div>
-                            <div class="day">25</div>
-                            <div class="day">26</div>
-                            <div class="day">27</div>
-                            <div class="day">28</div>
-                            <div class="day">29</div>
-                            <div class="day">30</div>
-                            <div class="day">31</div>
-                        </div>
+                    <form action="{{ route('fetch.data') }}" method="GET">
+    <input type="date" name="data" id="data" required>
+    <button type="submit">Buscar Dados</button>
+</form>
+@if(isset($record))
+    <ul>
+        <li>Turma: <span>{{ $record->escola}}</span></li>
+        <li>Quantidade Desperdiçada: <span>{{ $record->quantidade}}</span></li>
+        <li>Descrição: <span>{{ $record->descricao}}</span></li>
+    </ul>
+@endif
+                
                     </div>
                     <br><br>
                 </section>
@@ -112,7 +60,7 @@
         </main>
         <footer>
             <div class="footer-chat">
-            <a href="{{ route('nutriapp') }}" class="btn-back">Voltar</a>
+            <a href="{{ route('inicio') }}" class="btn-back">Voltar</a>
             </div>
         </footer>
     </div>

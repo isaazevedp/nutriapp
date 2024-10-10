@@ -26,7 +26,6 @@
         </header>
 
         <main class="main-content">
-        <a href="{{ route('inicio') }}" class="btn">REGISTRO</a>
         <a href="{{ route('controle') }}" class="btn">DESPERDÍCIO</a>
         <a href="{{ route('painel') }}" class="btn">RELATÓRIO</a>
         </main>

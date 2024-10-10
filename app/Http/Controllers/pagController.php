@@ -35,6 +35,6 @@ class pagController extends Controller
         //     'descricao' => $request->input('descricao'),
         // ]);
         $desperdicio->save();
-        return redirect('/nutriapp')->with('success', 'Cadastro realizado com sucesso!');
+        return redirect('/')->with('success', 'Cadastro realizado com sucesso!');
     }
 }

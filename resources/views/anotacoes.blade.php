@@ -29,8 +29,8 @@
                 <label for="descricao">Descrição:</label>
                 <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva o desperdício observado..." ></textarea>
 
-                <input type="submit" text="Salvar">
-                <a href="{{ route('desperdiciostore') }}">Salvar Anotação</a>
+                <input type="submit" text="Salvar" class="btn-enviar">
+               
                 <a href="{{ route('inicio') }}" class="btn-voltar">Voltar</a>
             </fieldset>
         </form>

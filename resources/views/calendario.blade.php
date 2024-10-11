@@ -50,19 +50,26 @@
         <li>Turma: <span>{{ $record->escola}}</span></li>
         <li>Quantidade Desperdiçada: <span>{{ $record->quantidade}}</span></li>
         <li>Descrição: <span>{{ $record->descricao}}</span></li>
+
+
+
+
+
     </ul>
+
+   
 @endif
+
+<div class="footer-chat">
+            <a href="{{ route('inicio') }}" class="btn-back">Voltar</a>
+            </div>
                 
                     </div>
                     <br><br>
                 </section>
             </div>
         </main>
-        <footer>
-            <div class="footer-chat">
-            <a href="{{ route('inicio') }}" class="btn-back">Voltar</a>
-            </div>
-        </footer>
+        
     </div>
 </body>
 </html>

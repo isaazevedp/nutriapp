@@ -21,7 +21,7 @@
     <div class="container">
         <header class="header">
             <div class="logo-circle">
-                <img src="{{ asset('storage/app/public/img/logo 2.png') }}" alt="Logo" class="logo-image">
+                <img src="{{ asset('storage/public/img/logo 2.png') }}" alt="Logo" class="logo-image">
             </div>
         </header>
 

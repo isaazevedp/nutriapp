@@ -28,7 +28,7 @@
         <main class="main-content">
         <a href="{{ route('controle') }}" class="btn">DESPERDÍCIO</a>
         <a href="{{ route('painel') }}" class="btn">RELATÓRIO</a>
-        <a href="{{ route('painel') }}" class="btn">DASHBOARD</a>
+        <a href="{{ route('dash') }}" class="btn">DASHBOARD</a>
         </main>
 
         <footer class="footer">

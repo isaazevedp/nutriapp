@@ -132,7 +132,7 @@ select:focus {
 
 .footer-chat {
     padding: 10px;
-    background-color: #48955b;
+    
     color: #fff;
     text-align: center;
 }
@@ -168,4 +168,15 @@ select:focus {
 
 .btn-notas:hover {
     background-color: #48955b;
+}
+
+.busca-dados{
+    background-color: #48955b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 1rem;
+    display: inline-block;
 }

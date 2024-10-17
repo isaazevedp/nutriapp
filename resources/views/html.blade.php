@@ -28,6 +28,7 @@
         <main class="main-content">
         <a href="{{ route('controle') }}" class="btn">DESPERDÍCIO</a>
         <a href="{{ route('painel') }}" class="btn">RELATÓRIO</a>
+        <a href="{{ route('painel') }}" class="btn">DASHBOARD</a>
         </main>
 
         <footer class="footer">

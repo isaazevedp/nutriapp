@@ -43,7 +43,7 @@
                     <h2>Calendário</h2>
                     <form action="{{ route('fetch.data') }}" method="GET">
     <input type="date" name="data" id="data" required>
-    <button type="submit">Buscar Dados</button>
+    <button class="busca-dados" type="submit">Buscar Dados</button>
 </form>
 @if(isset($record))
     <ul>
@@ -61,6 +61,7 @@
 @endif
 
 <div class="footer-chat">
+    
             <a href="{{ route('inicio') }}" class="btn-back">Voltar</a>
             </div>
                 

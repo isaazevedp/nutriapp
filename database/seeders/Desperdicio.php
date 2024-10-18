@@ -1,12 +1,18 @@
-
 <?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 
-class DesperdicioAlimentoSeeder extends Seeder
+class Desperdicio extends Seeder
 {
-    public function run()
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
     {
         $data = [
             ['data' => '2023-10-01', 'escola' => 'Ensino Fundamental', 'quantidade' => 12.5, 'descricao' => 'Restos de frutas e verduras', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()],
@@ -43,7 +49,7 @@ class DesperdicioAlimentoSeeder extends Seeder
             // Adicione mais linhas conforme necessário
         ];
 
-        DB::table('desperdicio_alimentos')->insert($data);
+        DB::table('desperdicios')->insert($data);
+
     }
 }
-

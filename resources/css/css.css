@@ -1,5 +1,4 @@
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -44,7 +43,7 @@ body {
 .main-content {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 25px;
 }
 
 .btn {
